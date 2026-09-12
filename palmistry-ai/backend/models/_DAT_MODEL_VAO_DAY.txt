@@ -1,0 +1,13 @@
+ĐẶT 4 FILE MODEL CỦA BẠN VÀO ĐÚNG THƯ MỤC NÀY, GIỮ NGUYÊN TÊN:
+
+  Sinh_Dao_model.h5
+  Su_Nghiep_model.h5
+  Tam_Dao_model.h5
+  Tri_Dao_model.h5
+
+Sau khi đặt đủ 4 file, chạy "python app.py" trong thư mục backend/ — server sẽ
+tự động nạp cả 4 model và tự nhận diện kích thước ảnh đầu vào (input_shape) và
+kiểu đầu ra (output_shape) của từng model, KHÔNG cần chỉnh code thủ công.
+
+Nếu thiếu file nào, server vẫn chạy được nhưng /api/predict sẽ trả lỗi 503 và
+ghi rõ tên (các) file còn thiếu trong log.
